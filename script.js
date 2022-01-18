@@ -47,11 +47,11 @@ const validarCriptografia = (texto) => {
 const criptografar = (str) => {
   if (validarCriptografia(str)) {
     return str
-      .replace("e", "enter")
-      .replace("i", "imes")
-      .replace("a", "ai")
-      .replace("o", "ober")
-      .replace("u", "ufat");
+      .replaceAll("e", "enter")
+      .replaceAll("i", "imes")
+      .replaceAll("a", "ai")
+      .replaceAll("o", "ober")
+      .replaceAll("u", "ufat");
   }
   return false;
 };
@@ -59,11 +59,11 @@ const criptografar = (str) => {
 const descriptografar = (str) => {
   if (validarCriptografia(str)) {
     return str
-      .replace("enter", "e")
-      .replace("imes", "i")
-      .replace("ai", "a")
-      .replace("ober", "o")
-      .replace("ufat", "u");
+      .replaceAll("enter", "e")
+      .replaceAll("imes", "i")
+      .replaceAll("ai", "a")
+      .replaceAll("ober", "o")
+      .replaceAll("ufat", "u");
   }
   return false;
 };
