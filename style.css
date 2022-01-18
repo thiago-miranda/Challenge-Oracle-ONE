@@ -1,0 +1,137 @@
+* {
+  color: #181d26;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #8c4c3e;
+}
+
+header {
+  margin: 30px 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+h1,
+.btn-copiar {
+  font-family: "Sarpanch", sans-serif;
+}
+textarea {
+  resize: none;
+  font-size: 20px;
+  min-width: 250px;
+}
+textarea:focus {
+  outline: none;
+}
+section {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+main {
+  flex-grow: 1;
+  align-self: flex-end;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline;
+  text-transform: uppercase;
+  padding: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+ul li a:hover {
+  color: #a67c2e;
+}
+
+.btn {
+  color: #a66b49;
+  font-weight: bold;
+  background: transparent;
+  padding: 10px 50px;
+  margin-right: 30px;
+  border: 3px solid #a66b49;
+}
+.btn:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 10px 50px;
+  margin: 20x 20px 0px 0px;
+  color: #f2cd13;
+  border-color: #f2cd13;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div {
+  position: relative;
+  width: 200px;
+}
+textarea {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+}
+
+.a-btn {
+  position: absolute;
+  right: 2px;
+  bottom: 8px;
+  cursor: pointer;
+}
+
+.btn.btn-copiar {
+  position: absolute;
+  right: 2px;
+  top: 150px;
+}
+
+textarea + .a-btn {
+  display: none;
+}
+textarea:hover + .a-btn {
+  display: block;
+}
+textarea + .a-btn:hover {
+  display: block;
+}
+
+footer {
+  color: #fff;
+  padding: 20px;
+}
+header,
+section,
+footer {
+  flex-shrink: 0;
+}
